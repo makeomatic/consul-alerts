@@ -68,11 +68,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/AcalephStorage/consul-alerts/Godeps/_workspace/src/github.com/aws/aws-sdk-go/aws"
-	"github.com/AcalephStorage/consul-alerts/Godeps/_workspace/src/github.com/aws/aws-sdk-go/aws/credentials"
-	"github.com/AcalephStorage/consul-alerts/Godeps/_workspace/src/github.com/aws/aws-sdk-go/aws/request"
-	"github.com/AcalephStorage/consul-alerts/Godeps/_workspace/src/github.com/aws/aws-sdk-go/internal/sdkio"
-	"github.com/AcalephStorage/consul-alerts/Godeps/_workspace/src/github.com/aws/aws-sdk-go/private/protocol/rest"
+	"github.com/makeomatic/consul-alerts/Godeps/_workspace/src/github.com/aws/aws-sdk-go/aws"
+	"github.com/makeomatic/consul-alerts/Godeps/_workspace/src/github.com/aws/aws-sdk-go/aws/credentials"
+	"github.com/makeomatic/consul-alerts/Godeps/_workspace/src/github.com/aws/aws-sdk-go/aws/request"
+	"github.com/makeomatic/consul-alerts/Godeps/_workspace/src/github.com/aws/aws-sdk-go/internal/sdkio"
+	"github.com/makeomatic/consul-alerts/Godeps/_workspace/src/github.com/aws/aws-sdk-go/private/protocol/rest"
 )
 
 const (
@@ -98,25 +98,25 @@ var ignoredHeaders = rules{
 var requiredSignedHeaders = rules{
 	whitelist{
 		mapRule{
-			"Cache-Control":                                               struct{}{},
-			"Content-Disposition":                                         struct{}{},
-			"Content-Encoding":                                            struct{}{},
-			"Content-Language":                                            struct{}{},
-			"Content-Md5":                                                 struct{}{},
-			"Content-Type":                                                struct{}{},
-			"Expires":                                                     struct{}{},
-			"If-Match":                                                    struct{}{},
-			"If-Modified-Since":                                           struct{}{},
-			"If-None-Match":                                               struct{}{},
-			"If-Unmodified-Since":                                         struct{}{},
-			"Range":                                                       struct{}{},
-			"X-Amz-Acl":                                                   struct{}{},
-			"X-Amz-Copy-Source":                                           struct{}{},
-			"X-Amz-Copy-Source-If-Match":                                  struct{}{},
-			"X-Amz-Copy-Source-If-Modified-Since":                         struct{}{},
-			"X-Amz-Copy-Source-If-None-Match":                             struct{}{},
-			"X-Amz-Copy-Source-If-Unmodified-Since":                       struct{}{},
-			"X-Amz-Copy-Source-Range":                                     struct{}{},
+			"Cache-Control":                         struct{}{},
+			"Content-Disposition":                   struct{}{},
+			"Content-Encoding":                      struct{}{},
+			"Content-Language":                      struct{}{},
+			"Content-Md5":                           struct{}{},
+			"Content-Type":                          struct{}{},
+			"Expires":                               struct{}{},
+			"If-Match":                              struct{}{},
+			"If-Modified-Since":                     struct{}{},
+			"If-None-Match":                         struct{}{},
+			"If-Unmodified-Since":                   struct{}{},
+			"Range":                                 struct{}{},
+			"X-Amz-Acl":                             struct{}{},
+			"X-Amz-Copy-Source":                     struct{}{},
+			"X-Amz-Copy-Source-If-Match":            struct{}{},
+			"X-Amz-Copy-Source-If-Modified-Since":   struct{}{},
+			"X-Amz-Copy-Source-If-None-Match":       struct{}{},
+			"X-Amz-Copy-Source-If-Unmodified-Since": struct{}{},
+			"X-Amz-Copy-Source-Range":               struct{}{},
 			"X-Amz-Copy-Source-Server-Side-Encryption-Customer-Algorithm": struct{}{},
 			"X-Amz-Copy-Source-Server-Side-Encryption-Customer-Key":       struct{}{},
 			"X-Amz-Copy-Source-Server-Side-Encryption-Customer-Key-Md5":   struct{}{},

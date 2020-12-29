@@ -24,7 +24,7 @@ consul-alerts provides a high degree of configuration including:
 Releases
 --------
 
-Stable release are [here](https://github.com/AcalephStorage/consul-alerts/releases).
+Stable release are [here](https://github.com/makeomatic/consul-alerts/releases).
 
 Latest release are found here:
  - [darwin-amd64](https://bintray.com/artifact/download/darkcrux/generic/consul-alerts-latest-darwin-amd64.tar)
@@ -36,7 +36,7 @@ Installation
 ------------
 
 ```
-$ go get github.com/AcalephStorage/consul-alerts
+$ go get github.com/makeomatic/consul-alerts
 $ go install
 ```
 

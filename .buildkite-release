@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-go get -u github.com/AcalephStorage/consul-alerts
+go get -u github.com/makeomatic/consul-alerts
 make clean release VERSION=$RELEASE_VERSION
 
 mkdir ./release

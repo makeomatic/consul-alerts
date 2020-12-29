@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/AcalephStorage/consul-alerts/Godeps/_workspace/src/github.com/Sirupsen/logrus"
 	"github.com/getsentry/raven-go"
+	"github.com/makeomatic/consul-alerts/Godeps/_workspace/src/github.com/Sirupsen/logrus"
 )
 
 var (

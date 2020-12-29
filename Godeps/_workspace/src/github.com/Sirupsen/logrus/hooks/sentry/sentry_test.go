@@ -9,8 +9,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/AcalephStorage/consul-alerts/Godeps/_workspace/src/github.com/Sirupsen/logrus"
 	"github.com/getsentry/raven-go"
+	"github.com/makeomatic/consul-alerts/Godeps/_workspace/src/github.com/Sirupsen/logrus"
 )
 
 const (
